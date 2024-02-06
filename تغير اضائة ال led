@@ -1,0 +1,25 @@
+ int led = 7; // المنفذ 7 حيث الليد مربوط
+
+ 
+
+void setup() {              
+
+  // تهيئة المنفذ 7 كمخرج
+
+  pinMode(led, OUTPUT);  
+
+}
+
+ 
+
+void loop() {
+
+  digitalWrite(led, HIGH); // إشعال الليد
+
+  delay(1000); // إنتظار ثانية واحدة
+
+  digitalWrite(led, LOW); // إطفاء الليد
+
+  delay(1000); // إنتظار ثانية واحد
+
+}
