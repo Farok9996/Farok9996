@@ -1,0 +1,55 @@
+int red_light_pin= 11;
+
+int green_light_pin = 10;
+
+int blue_light_pin = 9;
+
+void setup() {
+
+  pinMode(red_light_pin, OUTPUT);
+
+  pinMode(green_light_pin, OUTPUT);
+
+  pinMode(blue_light_pin, OUTPUT);
+
+}
+
+void loop() {
+
+  RGB_color(255, 0, 0); // أحمر
+
+  delay(1000);
+
+  RGB_color(0, 255, 0); // أخضر
+
+  delay(1000);
+
+  RGB_color(0, 0, 255); // أزرق
+
+  delay(1000);
+
+  RGB_color(255, 255, 125); // لون التوت
+
+  delay(1000);
+
+  RGB_color(0, 255, 255); // لون سماوي
+
+  delay(1000);
+
+  RGB_color(255, 0, 255); // أرجواني
+
+  delay(1000);
+
+  RGB_color(255, 255, 0); // أصفر
+
+  delay(1000);
+
+  RGB_color(255, 255, 255); // أبيض
+
+  delay(1000);
+
+}
+
+void RGB_color(int red_light_value, int green_light_value, int blue_light_value)
+
+ {
